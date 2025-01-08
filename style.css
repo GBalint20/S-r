@@ -1,0 +1,89 @@
+html {
+    background-image: url(design/teglafal.jpg);
+}
+
+body {
+    background-image: url(design/teglafal.jpg);
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(33, 33, 33);
+
+    
+}
+
+header {
+    background-image: url(design/beer-new_401732638.jpg);
+    background-size: cover;
+    height: 300px;
+
+}
+
+header h1{
+    font-style: bold;
+    font-family: Garamond;
+    font-size: 32px;
+    letter-spacing: 4px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+nav {
+    grid-area: n;
+    background-color: grey;
+}
+
+nav ul li {
+    list-style-type: none;
+    border: 1px white;
+    border-radius: 4px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: red;
+}
+
+nav ul a:hover {
+    background-color: grey;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: grey;
+}
+
+article {
+    grid-area: a;
+    text-align: justify;
+    font-size: 10px;
+}
+
+article h2 {
+    font-size: 15px;
+}
+
+article img {
+    float: left;
+    border: 2px  white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    height: auto;
+    
+}
+
+aside {
+    grid-area: as;
+}
+
+#form {
+    display: grid;
+    grid-template-areas: "a n";
+}
