@@ -4,7 +4,9 @@ html {
 
 body {
     background-image: url(design/teglafal.jpg);
+    background-repeat: no-repeat;
     box-sizing: border-box;
+    box-shadow: 0px 0px 10px white;
     font-family: Arial, Verdana, sans-serif;
     color: beige;
     font-size: 10pt;
@@ -12,6 +14,7 @@ body {
     max-width: 1000px;
     margin: auto;
     background-color: rgb(33, 33, 33);
+    margin-top: 20px;
 
     
 }
@@ -24,7 +27,7 @@ header {
 }
 
 header h1{
-    font-style: bold;
+    font-weight: bold;
     font-family: Garamond;
     font-size: 32px;
     letter-spacing: 4px;
@@ -36,13 +39,19 @@ header h1{
 
 nav {
     grid-area: n;
-    background-color: grey;
+
+}
+
+nav ul {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 nav ul li {
     list-style-type: none;
-    border: 1px white;
-    border-radius: 4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 nav ul a {
@@ -60,9 +69,13 @@ nav ul li:hover {
 }
 
 article {
+    background-color: black;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
     grid-area: a;
     text-align: justify;
     font-size: 10px;
+    padding: 10px;
 }
 
 article h2 {
@@ -71,12 +84,18 @@ article h2 {
 
 article img {
     float: left;
-    border: 2px  white;
-    border-radius: 4px;
+    border: 2px solid white;
+    border-radius: 5px;
     padding: 5px;
     width: 200px;
     height: auto;
+    margin-right: 25px;
     
+}
+
+article ul li {
+    padding-right: 10px;
+    list-style-type: square;
 }
 
 aside {
@@ -85,5 +104,12 @@ aside {
 
 #form {
     display: grid;
-    grid-template-areas: "a n";
+    grid-template-areas: "a n"
+                        "f f";
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+    background-color: grey;
 }
